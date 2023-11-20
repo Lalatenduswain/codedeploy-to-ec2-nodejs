@@ -19,7 +19,7 @@ This repository contains scripts and configuration files essential for deploying
 To use this project, clone the repository and navigate to the project directory. Ensure you have Node.js installed and run `npm install` to install the necessary dependencies.
 
 ### Prerequisites
-
+- AWS Ubuntu Instance required
 - AWS CLI installed and configured
 - An AWS account with necessary permissions for EC2 and CodeDeploy
 - Node.js environment
