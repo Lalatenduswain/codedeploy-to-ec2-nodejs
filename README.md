@@ -2,7 +2,17 @@
 
 Deploy the Nodejs application to EC2 Instance using CodeDeploy.
 
-This repository contains scripts and configuration files for deploying a Node.js application to an Amazon EC2 instance using AWS CodeDeploy. The project includes various scripts like `afterinstall.sh`, `applicationstart.sh`, and AWS-specific files like `appspec.yml` and `buildspec.yml`.
+This repository contains scripts and configuration files essential for deploying a Node.js application to an Amazon EC2 instance using AWS CodeDeploy.
+
+## File Descriptions
+
+- `afterinstall.sh`: A shell script executed after the application's code has been deployed to the EC2 instance. This script typically handles tasks like setting up environment variables, running database migrations, or performing any post-deployment configuration needed for the application to run properly.
+
+- `applicationstart.sh`: This script is responsible for starting the Node.js application on the EC2 instance. It usually includes commands to start the Node.js server, ensuring that the application is up and running after deployment.
+
+- `appspec.yml`: The AppSpec file is a YAML-formatted file used by AWS CodeDeploy to manage a deployment. It specifies the deployment's hooks and the location of application files to copy. This file is crucial for instructing CodeDeploy on how to handle the deployment process, including pre-deployment and post-deployment activities.
+
+- `buildspec.yml`: Used by AWS CodeBuild, this YAML file contains a collection of build commands and related settings, in the form of phases, that CodeBuild uses to run a build. This file is essential for defining the build process, including installation of dependencies, build commands, and post-build tests.
 
 ## Getting Started
 
