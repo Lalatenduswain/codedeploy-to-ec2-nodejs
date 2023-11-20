@@ -3,89 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Application Name</title>
-    <!-- Bootstrap CSS for responsive layout and styling -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        /* Custom styles */
-        .hero-section {
-            padding: 50px 0;
-            background: #f8f9fa;
-            text-align: center;
-        }
-        .features-section, .about-section {
-            padding: 30px 0;
-        }
-    </style>
+    <title>Lalatendu Chat Application</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Your Brand</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-            </ul>
+    <section class="chat__section">
+        <div class="brand">
+            <img class="logo" src="/l-logo.webp" alt="Lalatendu Logo">
+            <h1>The Cloud World... &#x1F603; &#x1F603;</h1>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <h1>Welcome to Your Application</h1>
-        <p>Describe your application in a catchy phrase.</p>
-        <a href="#" class="btn btn-primary">Get Started</a>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features-section bg-white">
-        <div class="container">
-            <h2 class="text-center">Features</h2>
-            <!-- Feature Items -->
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Feature One</h3>
-                    <p>Describe the first feature of your application.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Feature Two</h3>
-                    <p>Describe the second feature of your application.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Feature Three</h3>
-                    <p>Describe the third feature of your application.</p>
-                </div>
-            </div>
+        <div class="message__area"></div>
+        <div class="message__input">
+            <textarea id="textarea" placeholder="Type here..."></textarea>
+            <button id="sendButton">Send</button>
         </div>
     </section>
-
-    <!-- About Section -->
-    <section class="about-section bg-light">
-        <div class="container">
-            <h2 class="text-center">About</h2>
-            <p>Provide some information about your application, its purpose, and how it benefits users.</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center py-3 bg-light">
-        <p>&copy; 2023 Your Brand Name. All Rights Reserved.</p>
-    </footer>
-
-    <!-- Bootstrap JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
 </body>
 </html>
-
