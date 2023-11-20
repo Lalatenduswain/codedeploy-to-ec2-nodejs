@@ -53,15 +53,20 @@ body {
 }
 
 #sendButton {
-    background-color: #007bff;
+    background-color: #28a745; /* A fresh green color */
     color: white;
     border: none;
     padding: 10px 20px;
     margin-left: 10px;
-    border-radius: 4px;
+    border-radius: 20px; /* Rounded edges for a softer look */
     cursor: pointer;
+    font-weight: bold; /* Make the text stand out */
+    text-transform: uppercase; /* Capitalizing button text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
 }
 
 #sendButton:hover {
-    background-color: #0056b3;
+    background-color: #218838; /* A darker shade of green for hover effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover for a 'lifting' effect */
 }
